@@ -1,6 +1,6 @@
 html,body{height: 100%; margin:0px; padding:0;font-family: 'Microsoft YaHei',Arial;}
 ul,li{ margin:0px; padding:0px; list-style:none}
-body{  overflow:hidden; position:relative; display:block; }
+body{  overflow:hidden; position:relative; display:block;background:#333333 }
 body{-moz-user-select: none;-webkit-user-select: none;-ms-user-select: none;-khtml-user-select: none; user-select: none;}
 .red{ color:#F00 !important}
 .green{ color:#0f990f !important}
@@ -28,12 +28,12 @@ body{-moz-user-select: none;-webkit-user-select: none;-ms-user-select: none;-kht
 #nav li{ width:11.1111111%; text-align:center; float:left; cursor:pointer; height:35px; line-height:35px}
 #nav li.current{ background:#d6d6d6}
 
-.item{ position:absolute; top:90px; left:0px; width:100%; bottom:0px; font-size:12px; z-index:2}
+.item{ position:absolute; top:150px; left:120px; width:100%; bottom:0px; font-size:12px; z-index:2}
 .item{color:#787878;}
 .item .touch{ position:absolute; left:5px; width:630px; top:10px; bottom:10px; overflow:hidden}
 
 
-.item #touch-minute{ width:510px;}
+.item #touch-minute{ width:760px;}
 
 .item #touch-minute #dot{ z-index:4; opacity: 0.4; background:#00F;border-radius:3px; width:6px; height:6px; margin-left:-3px; margin-top:-3px; position:absolute; left:-1000px; top:0px;}
 
@@ -48,19 +48,19 @@ body{-moz-user-select: none;-webkit-user-select: none;-ms-user-select: none;-kht
 
 .item #sell-buy{ position:absolute; width:220px; top:-85px; bottom:20px; right:0}
 
-.item #sell-buy li{ height:6%; line-height:200%; width:100%;  float:left;vertical-align:middle;}
+.item #sell-buy li{ height:4%; line-height:200%; width:100%;  float:left;vertical-align:middle;}
 .item #sell-buy li span{ }
-.item #sell-buy li .name1{ width:150px;  float:left;color:#000000;}
-.item #sell-buy li .time1{ width:500px;  float:left;color:#000000;}
-.item #sell-buy li .nowpri{ width:500px;  float:left;color:#FF0000;}
-.item #sell-buy li .nowpri1{ width:500px;  float:left;color:#00FF00;}
-.item #sell-buy li .nowpri2{ width:200px;  float:left;color:#000000;}
-.item #sell-buy li .name{ width:60px; float:left;}
+.item #sell-buy li .name1{ width:150px;  float:left;color:#FFFFFF;}
+.item #sell-buy li .time1{ width:500px;  float:left;color:#FFFFFF;}
+.item #sell-buy li .nowpri{ width:200px;  float:left;color:#FF0000;}
+.item #sell-buy li .nowpri1{ width:200px;  float:left;color:#00FF00;}
+.item #sell-buy li .nowpri2{ width:200px;  float:left;color:#FFFFFF;}
+.item #sell-buy li .name{ width:60px; float:left;color:#FFFFFF;}
 .item #sell-buy li .price{ width:35px; float:left;}
-.item #sell-buy li .size{ width:40px; float:right; text-align:right; margin-right:10px;}
+.item #sell-buy li .size{ width:40px; float:right; text-align:right; margin-right:10px;color:#FFFFFF;}
 .item #sell-buy li.hr{ height:1px; background:#ccc; line-height:1px; margin-top:5px}
 
-.item .K-line{ left:0px; top:0px; width:100%; height:150px; position:absolute;}
+.item .K-line{ left:0px; top:0px; width:100%; height:224px; position:absolute;}
 .item .K-line .price{ position:absolute; left:5px; height:100%; z-index:3}
 .item .K-line .price li{ position:absolute; left:0px; height:16px; line-height:16px; margin-top:-8px}
 .item .K-line .price .max-price{ top:0px}
@@ -74,11 +74,11 @@ body{-moz-user-select: none;-webkit-user-select: none;-ms-user-select: none;-kht
 .item .K-line .range .min-range{ bottom:0px;}
 
 
-.item .K-line .k{ position:absolute; width:100%; height:150px; top:0px; z-index:1}
-.item .KL-time{ position:absolute; width:100%; top:155px; height:20px; line-height:20px;}
+.item .K-line .k{ position:absolute; width:100%; height:224px; top:0px; z-index:1}
+.item .KL-time{ position:absolute; width:100%; top:230px; height:20px; line-height:20px;}
 
 
-.item .L-line{ position:absolute; width:100%; bottom:0px; top:180px; left:0px;}
+.item .L-line{ position:absolute; width:100%;height:250px; bottom:0px; top:250px; left:0px;}
 .item .L-line .l{ width:100%; height:100%; left:0px; top:0px}
 
 .item .L-line .volume{ position:absolute; width:100%; left:0px; top:0px; height:100%; z-index:3; text-align:right}

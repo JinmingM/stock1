@@ -60,15 +60,7 @@ h3 {
 .homepage{ display: block; }
 .portfolioshow	{ display: block; }
 /* .container	{ position: absolute; } */
-.userlog {
-	height: 50%;
-	width: 20%;
-	float: right;
 
-}
-.userhref {
-	font-size：22px
-}
 .templatemo_link ,.templatemo_linkservice,.templatemo_linkcontact { 
 	font-size: 2em; color: #ffffff;
 	width: 95%;
@@ -88,7 +80,13 @@ h3 {
 	color: #b5b5b5;
 	margin: 10px 0px 30px 25px;
 }
-
+.templatemo_smalltitle1 { 
+	float: left; 
+	padding: 0px 0px 0px 0px; 
+	font-size: 1em; 
+	color: #b5b5b5;
+	margin: 10px 0px 30px 115px;
+}
 .templatemo_footer { 
 	float: right; 
 	padding: 0px 0px 0px 0px; 

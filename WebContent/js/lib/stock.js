@@ -1,11 +1,11 @@
 //核心文件
 var stock={
 	color:{
-		border:"#ccc",//边框颜色
+		border:"#ffffff",//边框颜色
 		withinBorder:"#dedede",//内边框颜色
 		solid:"#333",//虚线颜色
-		trend:"#0000ff",//K线颜色
-		fill:"rgba(154,196,248,.3)",//填充颜色
+		trend:"#ffffff",//K线颜色
+		fill:"rgba(255,255,255,.3)",//填充颜色
 		arc:"#0453b4",	//圆心
 		volume:"#999",	//成交量颜色
 		red:"#dd2200",
@@ -27,7 +27,7 @@ var stock={
 			J:"#ff80ff"
 		}
 	},
-	touch:{left:5,top:100},
+	touch:{left:125,top:150},
 	stockID:"",//当前股票ID,
 	stockType:"",//股票分类
 	data:null,//当前行情数据,
@@ -109,7 +109,7 @@ var stock={
 			console.log(stock.day);
 			console.log(stock.data[30]);
 			if(stock.day!=stock.data[30]){
-				return false;	
+				//return false;	
 			}
 			var date=new Date(stock.hq.time*1000);
 			var t=date.getHours()+date.getMinutes()/100;
@@ -229,7 +229,7 @@ var stock={
 		this.isPC=this.script.isPC();
 		
 		if(this.isPC){
-			$("body").css({width:800,height:500})
+			$("body").css({width:1000,height:800})
 		}else{
 			$(window).bind('resize load', function() {
 				$("body").css("zoom", $(window).width() / 640);
@@ -886,19 +886,21 @@ var stock_minute1={
 	sellbuy:function(){
 		var data=stock.data;
 		//卖
-		console.log(stock_minute1.p_price);
-		var p_price = stock_minute1.p_price;
+		
+		var p_price1 = stock_minute1.p_price;
 		var str="";
 		str+='<li><span class="name1"  style="font-size:25px"><B>'+data[0]+'</B></span></li><br /><br />';
 		str+='<li><span class="time1"  style="font-size:20px"><B>'+data[30]+'  '+data[31]+'</B></span></li>';
-		var roit = (data[3]-p_price)/p_price;
-		if(p_price>data[3])
+		var roit = (data[3]-p_price1)/p_price1;
+		console.log("roit"+roit);
+		roit = roit*100;
+		if(p_price1>data[3])
 		{
-			str+='<li><span class="nowpri1"  style="font-size:20px"><B>'+data[3]+'       '+roit.toFixed(2)+"%"+'↓</B></span></li>';//g
-		}else if(p_price<data[3]){
-			str+='<li><span class="nowpri"  style="font-size:20px"><B>'+data[3]+'       '+roit.toFixed(2)+"%"+'↑</B></span></li>';//r
-		}else if(p_price=data[3]){
-			str+='<li><span class="nowpri2"  style="font-size:20px"><B>'+data[3]+'       '+roit.toFixed(2)+"%"+'</B></span></li>';//r
+			str+='<li><span class="nowpri1"  style="font-size:20px"><B>'+data[3]+'       '+(roit.toFixed(2))+"%"+'↓</B></span></li>';//g
+		}else if(p_price1<data[3]){
+			str+='<li><span class="nowpri"  style="font-size:20px"><B>'+data[3]+'       '+(roit.toFixed(2))+"%"+'↑</B></span></li>';//r
+		}else if(p_price1=data[3]){
+			str+='<li><span class="nowpri2"  style="font-size:20px"><B>'+data[3]+'       '+(roit.toFixed(2))+"%"+'</B></span></li>';//r
 		}
 		str+='<li class="hr"></li>';
 		for(var i=1;i<5;i++){
