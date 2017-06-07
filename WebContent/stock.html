@@ -12,8 +12,6 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <link type="text/css" rel="stylesheet" href="css/style1.css"/>
-    <link type="text/css" rel="stylesheet" href="css/style.css" />
-    <link href="css/templatemo_style.css" rel="stylesheet"> 
     <script type="text/javascript" src="js/jquery-1.11.3.js"></script>
     <script type="text/javascript" src="js/lib/stock.js"></script>  	  	
 	<script type="text/javascript">
@@ -28,7 +26,7 @@
 		 	var data={};
 		 	var sid = GetQueryString("sid");
 		 	var date = GetQueryString("date");
-		 	console.log(date);
+
 		 	
 			data.stockID=sid.substr(-6);
 			data.stockType=sid.substr(0, 2).toLowerCase();
@@ -55,13 +53,6 @@
 </script>
 </head>
 <body>
-    <div class="logocontainer">
-    	<div class="row">
-        	<h1 style = "margin: 4.5% 0% 0% 10%;"><a href="#">Stocks.</a></h1>
-            <div class="clear"></div>
-            <div class="templatemo_smalltitle1">国内一流股票交易平台$_$.</div>
-       </div>
-    </div>
 
 </body>
 </html>

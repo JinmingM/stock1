@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>kkk</title>
 	<link rel="stylesheet" href="css/templatemo_misc.css">
+	<link rel="stylesheet" href="css/style.css">
    	<link type="text/css" rel="stylesheet" href="css/easy-responsive-tabs.css" />
     <link href="css/templatemo_style.css" rel="stylesheet"> 
     <script type="text/javascript" src="js/echarts.js"></script>   	  	
@@ -12,11 +13,38 @@
     	<div class="row">
         	<h1><a href="#">Stock</a></h1>
             <div class="clear"></div>
-            <div class="templatemo_smalltitle">Free HTML5 Template</div>
+            <div class="templatemo_smalltitle" id="title"></div>
        </div>
+       
     </div>
+    
       <div id="main" style="width: 1000px;height:500px;top:50px;left:150px;"></div>
       <script type="text/javascript">
+      function GetQueryString(name) { 
+          var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)","i"); 
+          var r = window.location.search.substr(1).match(reg); 
+          if (r!=null) 
+          	return (r[2]); 
+          return null; 
+      } 
+      var code = GetQueryString("code");
+	  var s_date = GetQueryString("s_date");
+	  var sname = decodeURI(GetQueryString("sname"));
+	  $('#title').text("股票："+sname+" 股票代码：" +code);
+	  //var titleStr="股票："+sname+" 股票代码：" +code;
+	  if(s_date.length==10)
+	  {
+		  var s_date1 = s_date.split("-");
+		  s_date = s_date1[0]+s_date1[1]+s_date1[2];
+	  }
+	  console.log(s_date);
+	  var e_date = GetQueryString("e_date");
+	  if(e_date.length==10)
+	  {
+		  var e_date1 = e_date.split("-");
+		  e_date = e_date1[0]+e_date1[1]+e_date1[2];
+	  }
+	  console.log(e_date);
       var myChart = echarts.init(document.getElementById('main'));
       
       function calculateMA(dayCount, data) {
@@ -34,13 +62,12 @@
     	    }
     	    return result;
     	}
-    myChart.title = "日K";
+    myChart.title = "test";
     $.ajax({
 		  method: "POST",
 		  url: "usert/kinfo.action",
-		  data: {code:600000,start:20170101,end:20170531},
-		  dataType: "json",
-		  
+		  data: {code:code,start:s_date,end:e_date},
+		  dataType: "json",	  
 		  success: function(data){
 			    
 			    //var rawData1 = data.substring(1,data.length-1);
@@ -187,9 +214,6 @@
         //日期，open，close，..,..,lowest,highest,..,..
         
         
-
-
-
 
 </script>
 
