@@ -7,7 +7,8 @@
    
     <resultMap id="StockResults" type="com.ssm.entity.Stock">
 	    <id column="sid" property="sid" jdbcType="INTEGER" javaType="Integer" />        
-	    <result column="sname" property="sname" jdbcType="VARCHAR" javaType="string" />            
+	    <result column="sname" property="sname" jdbcType="VARCHAR" javaType="string" />  
+	     <result column="date" property="date"/>          
     </resultMap>      
    
     <select id="SelectStockAll" resultMap="StockResults">

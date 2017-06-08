@@ -11,7 +11,7 @@
 	    <result column="balance" property="balance" jdbcType="INTEGER" javaType="INTEGER" />
 	    <result column="abalance" property="abalance" jdbcType="INTEGER" javaType="INTEGER" />
 	    <result column="cost" property="cost" jdbcType="INTEGER" javaType="INTEGER" />
-	     
+	    <result column="date" property="date"/>
     </resultMap>      
     <resultMap id="BillCount" type="com.ssm.entity.Bcount">
 	    <id column="uid" property="uid" jdbcType="INTEGER" javaType="Integer" />  

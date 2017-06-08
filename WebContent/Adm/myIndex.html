@@ -251,29 +251,29 @@
                       </span>
 
                       <div class="media-body">
-                        <small>New Users</small>
-                        <h2 class="media-heading animate-number" data-value="3659" data-animation-duration="1500">0</h2>
+                        <small>新用户</small>
+                        <h2 class="media-heading animate-number" id="newuser1" data-animation-duration="1500">0</h2>
                       </div>
                     </div> 
 
                     <div class="progress-list">
                       <div class="details">
-                        <div class="title">This month plan %</div>
+                        <div class="title">今天用户增加量</div>
                       </div>
                       <div class="status pull-right bg-transparent-black-1">
-                        <span class="animate-number" data-value="83" data-animation-duration="1500">0</span>%
+                        <span class="animate-number" id="newuser2"  data-animation-duration="1500">0</span>%
                       </div>
                       <div class="clearfix"></div>
                       <div class="progress progress-little progress-transparent-black">
-                        <div class="progress-bar animate-progress-bar" data-percentage="83%"></div>
+                        <div class="progress-bar animate-progress-bar" data-percentage="33%"></div>
                       </div>
                     </div>
 
                   </div>
                   <div class="back">
-                    <a href="#">
+                    <a href="tables.html">
                       <i class="fa fa-bar-chart-o fa-4x"></i>
-                      <span>Check Summary</span>
+                      <span>查看详情</span>
                     </a>  
                   </div>
                 </div>
@@ -290,17 +290,17 @@
                       </span>
 
                       <div class="media-body">
-                        <small>New Orders</small>
-                        <h2 class="media-heading animate-number" data-value="19214" data-animation-duration="1500">0</h2>
+                        <small>新购买订单</small>
+                        <h2 class="media-heading animate-number" id="newbill1" data-animation-duration="1500">0</h2>
                       </div>
                     </div> 
 
                     <div class="progress-list">
                       <div class="details">
-                        <div class="title">This month plan %</div>
+                        <div class="title">今天购买量</div>
                       </div>
                       <div class="status pull-right bg-transparent-black-1">
-                        <span class="animate-number" data-value="100" data-animation-duration="1500">0</span>%
+                        <span class="animate-number" id="newbill2" data-animation-duration="1500">0</span>%
                       </div>
                       <div class="clearfix"></div>
                       <div class="progress progress-little progress-transparent-black">
@@ -310,9 +310,9 @@
 
                   </div>
                   <div class="back">
-                    <a href="#">
+                    <a href="datatables.html">
                       <i class="fa fa-bar-chart-o fa-4x"></i>
-                      <span>Check Summary</span>
+                      <span>查看详情</span>
                     </a>
                   </div>
                 </div>
@@ -328,17 +328,17 @@
                       </span>
 
                       <div class="media-body">
-                        <small>Sales</small>
-                        <h2 class="media-heading animate-number" data-value="169541" data-animation-duration="1500">0</h2>
+                        <small>新出售订单</small>
+                        <h2 class="media-heading animate-number" id="newhisbill1" data-animation-duration="1500">0</h2>
                       </div>
                     </div>
 
                     <div class="progress-list">
                       <div class="details">
-                        <div class="title">This month plan %</div>
+                        <div class="title">今天出售量</div>
                       </div>
                       <div class="status pull-right bg-transparent-black-1">
-                        <span class="animate-number" data-value="42" data-animation-duration="1500">0</span>%
+                        <span class="animate-number" id="newhisbill2" data-animation-duration="1500">0</span>%
                       </div>
                       <div class="clearfix"></div>
                       <div class="progress progress-little progress-transparent-black">
@@ -348,9 +348,9 @@
 
                   </div>
                   <div class="back">
-                    <a href="#">
+                    <a href="datatables.html">
                       <i class="fa fa-bar-chart-o fa-4x"></i>
-                      <span>Check Summary</span>
+                      <span>查看详情</span>
                     </a>
                   </div>
                 </div>
@@ -367,14 +367,14 @@
                       </span>
 
                       <div class="media-body">
-                        <small>Visits</small>
+                        <small>访问量</small>
                         <h2 class="media-heading animate-number" data-value="9634" data-animation-duration="1500">0</h2>
                       </div>
                     </div> 
 
                     <div class="progress-list">
                       <div class="details">
-                        <div class="title">This month plan %</div>
+                        <div class="title">今日访问量</div>
                       </div>
                       <div class="status pull-right bg-transparent-black-1">
                         <span class="animate-number" data-value="25" data-animation-duration="1500">0</span>%
@@ -389,7 +389,7 @@
                   <div class="back">
                     <a href="#">
                       <i class="fa fa-bar-chart-o fa-4x"></i>
-                      <span>Check Summary</span>
+                      <span>查看详情</span>
                     </a>
                   </div>
                 </div>
@@ -420,7 +420,7 @@
 
                   <!-- tile header -->
                   <div class="tile-header color transparent-black textured rounded-top-corners">
-                    <h1><strong>用户在线数</strong> 交易数</h1>
+                    <h1><strong>用户访问数</strong> 交易数</h1>
                     <div class="controls">
                       <a href="#" class="refresh"><i class="fa fa-refresh"></i></a>
                       <a href="#" class="remove"><i class="fa fa-times"></i></a>
@@ -436,109 +436,7 @@
                   <!-- /tile widget -->
 
 
-                  <!-- tile body -->
-                  <div class="tile-body color transparent-white rounded-bottom-corners">
-                    <div class="row">
-                      <ul class="inline">
-                        
-                        <li class="col-md-8 col-sm-12 col-xs-12 text-center">
-                          
-                          <h4 class="underline text-left"><strong>总计</strong></h4>
-                          
-                          <div class="inner-container inline">
-                            <div data-percent="100" data-size="140" class="pie-chart inline" data-scale-color="false" data-track-color="rgba(0,0,0,0)" data-bar-color="#ffffff" data-line-width="5">
-                              <div class="text-center">
-                                <i class="fa fa-usd fa-5x"></i>
-                              </div>
-                            </div>
-                            <p class="chart-overall text-center medium-thin uppercase"><span class="big-medium animate-number" data-value="6175" data-animation-duration="2500">0</span> Sales</p>
-                          </div>
-
-
-                          <div class="inner-container inline">
-                            <div data-percent="85" data-size="140" class="pie-chart inline" data-scale-color="false" data-track-color="rgba(0,0,0,0)" data-bar-color="rgba(0,0,0,.4)" data-line-width="5">
-                              <div class="text-center">
-                                <span><i class="fa fa-eye fa-5x color-transparent-black"></i></span>
-                              </div>
-                            </div>
-                            <p class="chart-overall text-center medium-thin uppercase color-transparent-black"><span class="big-medium animate-number" data-value="8213" data-animation-duration="2500">0</span> Visits</p>
-                          </div>
-
-                        </li>
-
-                        <li class="col-md-4 col-sm-12 col-xs-12">
-                          <h4 class="underline"><strong>Visitors</strong> Statistics</h4>
-                          <ul class="progress-list">
-                            <li>
-                              <div class="details">
-                                <div class="title">America</div>
-                                <div class="description">Visitors from America</div>
-                              </div>
-                              <div class="status pull-right">
-                                <span class="animate-number" data-value="40" data-animation-duration="1500">0</span>%
-                              </div>
-                              <div class="clearfix"></div>
-                              <div class="progress progress-little">
-                                <div class="progress-bar progress-bar-green animate-progress-bar" data-percentage="40%" style="width: 0%;"></div>
-                              </div>
-                            </li>
-                            <li>
-                              <div class="details">
-                                <div class="title">Europe</div>
-                                <div class="description">Visitors from Europe</div>
-                              </div>
-                              <div class="status pull-right">
-                                 <span class="animate-number" data-value="38" data-animation-duration="1000">0</span>%
-                              </div>
-                              <div class="clearfix"></div>
-                              <div class="progress progress-little">
-                                <div class="progress-bar progress-bar-cyan animate-progress-bar" data-percentage="35%" style="width: 0%;"></div>
-                              </div>
-                            </li>
-                            <li>
-                              <div class="details">
-                                <div class="title">Asia</div>
-                                <div class="description">Visitors from Asia</div>
-                              </div>
-                              <div class="status pull-right">
-                                <span class="animate-number" data-value="12" data-animation-duration="800">0</span>%
-                              </div>
-                              <div class="clearfix"></div>
-                              <div class="progress progress-little">
-                                <div class="progress-bar progress-bar-amethyst animate-progress-bar" data-percentage="12%" style="width: 0%;"></div>
-                              </div>
-                            </li>
-                            <li>
-                              <div class="details">
-                                <div class="title">Africa</div>
-                                <div class="description">Visitors from Africa</div>
-                              </div>
-                              <div class="status pull-right">
-                                <span class="animate-number" data-value="7" data-animation-duration="600">0</span>%
-                              </div>
-                              <div class="clearfix"></div>
-                              <div class="progress progress-little">
-                                <div class="progress-bar progress-bar-orange animate-progress-bar" data-percentage="7%" style="width: 0%;"></div>
-                              </div>
-                            </li>
-                            <li>
-                              <div class="details">
-                                <div class="title">Other</div>
-                              </div>
-                              <div class="status pull-right">
-                                <span class="animate-number" data-value="6" data-animation-duration="400">0</span>%
-                              </div>
-                              <div class="clearfix"></div>
-                              <div class="progress progress-little">
-                                <div class="progress-bar progress-bar-red animate-progress-bar" data-percentage="6%" style="width: 0%;"></div>
-                              </div>
-                            </li>       
-                          </ul>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <!-- /tile body -->
+                 
 
 
 
@@ -555,7 +453,7 @@
 
                   <!-- tile header -->
                   <div class="tile-header">
-                    <h1><strong>盈利</strong> 排行榜</h1>
+                    <h1><strong>盈利</strong> Top10</h1>
                     <div class="search">
                       <input type="text" placeholder="Search...">
                     </div>
@@ -570,123 +468,27 @@
                   <!-- tile body -->
                   <div class="tile-body no-vpadding">
                     <div class="table-responsive">
-                      <table class="table table-custom table-sortable nomargin">
+                      <table class="table table-custom table-sortable nomargin" 
+                            data-url="../usert/successUser.action"  
+				       		data-page-list="[5, 10, 15]"
+				       		data-toggle="table"
+				       		data-pagination="true" 
+					   		data-click-to-select="true"	
+				        	data-side-pagination="client">
                         <thead>
                           <tr>
-                            <th class="sortable sort-numeric sort-asc">ID</th>
-                            <th class="sortable sort-alpha">Project</th>
-                            <th class="sortable">Priority</th>
-                            <th class="sortable sort-amount">Status</th>
-                            <th class="text-right">Chart</th>
+                            <th class="sortable sort-numeric sort-asc" data-field="id" data-sortable="true">ID</th>
+                            <th class="sortable sort-alpha" data-field="uname"> 用户名</th>
+                            <th class="sortable" data-field="total" data-sortable="true">交易数</th>
+                            <th class="sortable sort-amount" data-field="roit" data-sortable="true">盈利比例</th>
+                            
                           </tr>
                         </thead>
-                        <tbody>
-                          <tr>
-                            <td>1</td>
-                            <td>Graphic Layout for client</td>
-                            <td class="color-red priority">High priority</td>
-                            <td class="progress-cell">
-                              <div class="progress-info">
-                                <div class="percent"><span class="animate-number" data-value="50" data-animation-duration="1500">0</span>%</div>
-                              </div>
-                              <div class="progress progress-little">
-                                <div class="progress-bar progress-bar-transparent-white animate-progress-bar" data-percentage="50%"></div>
-                              </div>
-                            </td>
-                            <td class="text-right"><span id="projectbar1">87,85,42,90,70,55,82,68</span></td>
-                          </tr>
-                          <tr>
-                            <td>2</td>
-                            <td>Make website responsive</td>
-                            <td class="color-green priority">Low priority</td>
-                            <td class="progress-cell">
-                              <div class="progress-info">
-                                <div class="percent"><span class="animate-number" data-value="13" data-animation-duration="1500">0</span>%</div>
-                              </div>
-                              <div class="progress progress-little">
-                                <div class="progress-bar progress-bar-transparent-white animate-progress-bar" data-percentage="13%"></div>
-                              </div>
-                            </td>
-                            <td class="text-right"><span id="projectbar2">87,99,52,93,42,86,51,93</span></td>
-                          </tr>
-                          <tr>
-                            <td>3</td>
-                            <td>Clean css/html/js code</td>
-                            <td class="color-red priority">High priority</td>
-                            <td class="progress-cell">
-                              <div class="progress-info">
-                                <div class="percent"><span class="animate-number" data-value="76" data-animation-duration="1500">0</span>%</div>
-                              </div>
-                              <div class="progress progress-little">
-                                <div class="progress-bar progress-bar-transparent-white animate-progress-bar" data-percentage="76%"></div>
-                              </div>
-                            </td>
-                            <td class="text-right"><span id="projectbar3">74,77,82,91,69,63,46,42</span></td>
-                          </tr>
-                          <tr>
-                            <td>4</td>
-                            <td>Database Optimization</td>
-                            <td class="color-orange priority">Normal priority</td>
-                            <td class="progress-cell">
-                              <div class="progress-info">
-                                <div class="percent"><span class="animate-number" data-value="38" data-animation-duration="1500">0</span>%</div>
-                              </div>
-                              <div class="progress progress-little">
-                                <div class="progress-bar progress-bar-transparent-white animate-progress-bar" data-percentage="38%"></div>
-                              </div>
-                            </td>
-                            <td class="text-right"><span id="projectbar4">52,45,76,74,77,57,65,86</span></td>
-                          </tr>
-                          <tr>
-                            <td>5</td>
-                            <td>Database Migration</td>
-                            <td class="color-green priority">Low priority</td>
-                            <td class="progress-cell">
-                              <div class="progress-info">
-                                <div class="percent"><span class="animate-number" data-value="9" data-animation-duration="1500">0</span>%</div>
-                              </div>
-                              <div class="progress progress-little">
-                                <div class="progress-bar progress-bar-transparent-white animate-progress-bar" data-percentage="9%"></div>
-                              </div>
-                            </td>
-                            <td class="text-right"><span id="projectbar5">53,70,47,96,62,49,69,55</span></td>
-                          </tr>
-                          <tr>
-                            <td>6</td>
-                            <td>Email server backup</td>
-                            <td class="color-orange priority">Normal priority</td>
-                            <td class="progress-cell">
-                              <div class="progress-info">
-                                <div class="percent"><span class="animate-number" data-value="29" data-animation-duration="1500">0</span>%</div>
-                              </div>
-                              <div class="progress progress-little">
-                                <div class="progress-bar progress-bar-transparent-white animate-progress-bar" data-percentage="29%"></div>
-                              </div>
-                            </td>
-                            <td class="text-right"><span id="projectbar6">69,80,85,96,67,58,75,82</span></td>
-                          </tr>
-                        </tbody>
+                      
                       </table>
                     </div>
                   </div>
                   <!-- /tile body -->
-
-
-                  <!-- tile footer -->
-                  <div class="tile-footer text-center">
-                    <ul class="pagination pagination-sm nomargin pagination-custom">
-                      <li class="disabled"><a href="#"><i class="fa fa-angle-double-left"></i></a></li>
-                      <li class="active"><a href="#">1</a></li>
-                      <li><a href="#">2</a></li>
-                      <li><a href="#">3</a></li>
-                      <li><a href="#">4</a></li>
-                      <li><a href="#">5</a></li>
-                      <li><a href="#"><i class="fa fa-angle-double-right"></i></a></li>
-                    </ul>
-                  </div>
-                  <!-- /tile footer -->
-
-
 
                 </section>
                 <!-- /tile -->
@@ -699,16 +501,8 @@
 
               <!-- col 4 -->
               <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
-                
-
-
-
                 <!-- tile -->
                 <section class="tile color transparent-black textured">
-
-
-
-
                   <!-- tile header -->
                   <div class="tile-header">
                     <h1><strong>服务器</strong> 负载</h1>
@@ -724,17 +518,17 @@
 
                     <div class="progress-list with-heading">
                       <div class="details">
-                        <div class="title"><h2><i class="fa fa-hdd-o"></i> <span class="animate-number" data-value="394" data-animation-duration="1600">0</span> GB</h2></div>
+                        <div class="title"><h2><i class="fa fa-hdd-o"></i> <span class="animate-number" data-value="4" data-animation-duration="1600">0</span> GB</h2></div>
                       </div>
                       <div class="status pull-right bg-transparent-black-1">
-                        <span class="animate-number" data-value="42" data-animation-duration="1500">0</span>%
+                        <span class="animate-number" data-value="50" data-animation-duration="1500">0</span>%
                       </div>
                       <div class="clearfix"></div>
                       <div class="progress progress-little progress-transparent-black" style="margin-bottom: 5px">
-                        <div class="progress-bar animate-progress-bar" data-percentage="42%"></div>
+                        <div class="progress-bar animate-progress-bar" data-percentage="50%"></div>
                       </div>
                     </div>  
-                    <p class="description"><strong>394GB</strong> used of <strong class="white-text">2,048GB</strong> on File Server</p>
+                    <p class="description"><strong>4GB</strong> used of <strong class="white-text">8GB</strong> on Server</p>
                   </div>
                   <!-- /tile widget -->
 
@@ -744,13 +538,9 @@
                     <div id="serverload-chart"></div>
                   </div>
                   <!-- /tile body -->
-                
-
-
                 </section>
                 <!-- /tile -->
-
-
+     
                 <!-- tile -->
                 <section class="tile color transparent-black">
 
@@ -770,12 +560,8 @@
                   <div class="tile-body">
                     <div id="browser-usage" style="height: 230px;" class="morris-chart"></div>
                     <ul class="inline text-center chart-legend">
-                      <li><span class="badge badge-outline" style="border-color: #00a3d8"></span> Chrome <small>25%</small>,</li>
-                      <li><span class="badge badge-outline" style="border-color: #1693A5"></span> Other <small>25%</small>,</li>
-                      <li><span class="badge badge-outline" style="border-color: #2fbbe8"></span> Safari <small>20%</small>,</li>
-                      <li><span class="badge badge-outline" style="border-color: #72cae7"></span> Firefox <small>15%</small>,</li>
-                      <li><span class="badge badge-outline" style="border-color: #ffc100"></span> Internet Explorer <small>10%</small>,</li>
-                      <li><span class="badge badge-outline" style="border-color: #d9544f"></span> Opera <small>5%</small></li>
+                      <li><span class="badge badge-outline" style="border-color: #ff0000"></span> 盈 <p id="profit">50%</p></li>
+                      <li><span class="badge badge-outline" style="border-color: #76EE00"></span> 亏 <p id="loss">50%</p></li>
                     </ul>
                   </div>
                   <!-- /tile body --> 
@@ -871,7 +657,21 @@
     <!-- Wrap all page content end -->
 
     <section class="videocontent" id="video"></section>
-
+    <!--dynamic table-->
+	<!-- Placed js at the end of the document so the pages load faster -->
+	<script src="js/jquery.js" ></script>
+	<script src="js/jquery-1.10.2.min.js"></script>
+	<script src="js/jquery-ui-1.9.2.custom.min.js"></script>
+	<script src="js/jquery-migrate-1.2.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/modernizr.min.js"></script>
+	<script src="js/jquery.nicescroll.js"></script>
+	<script src="js/bootstrap-table.js"></script>  
+	<script src="js/bootstrap-table-export.js"></script>
+	<script src="js/bootstrap-table-zh-CN.js"></script>
+	<script src="js/tableExport.js"></script>
+	
+	<!--dynamic table-->
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -943,55 +743,191 @@
 	</script>
     <script>
     $(function(){
-
+    	//今日新用户量
+    	function getNowFormatDate() {
+              var date = new Date();
+              var seperator1 = "-";
+              var seperator2 = ":";
+              var month = date.getMonth() + 1;
+              var strDate = date.getDate();
+              if (month >= 1 && month <= 9) {
+                 month = "0" + month;
+               }
+              if (strDate >= 0 && strDate <= 9) {
+                    strDate = "0" + strDate;
+              }
+              var currentdate = date.getFullYear() + seperator1 + month + seperator1 + strDate
+                                  + " " + date.getHours() + seperator2 + date.getMinutes()
+                      + seperator2 + date.getSeconds();
+              return currentdate;
+        }
+    	$.ajax({
+            type:"POST",
+            url:"../usert/searchUser.action",
+            data:{},
+            datatype: "json",
+            success:function(data){
+            	//console.log(data);
+            	var newuser=0;
+            	var totaluser = 0;
+            	for(var o in data)
+            	{
+            		var date = data[o].date;
+            		var stime = new Date(date);
+            		var nowday = getNowFormatDate();
+            		var etime = new Date(nowday);
+            		if(date.substring(0,10)==nowday.substring(0,10))
+            		{
+            			newuser=newuser+1;
+            			
+            		}
+            		totaluser=totaluser+1;
+            		//console.log(date.substring(0,10));
+            		//console.log(nowday.substring(0,10));
+            		//console.log(etime.getDay());
+            		
+            	}
+            	var x = document.getElementById("newuser1");
+            	var y = document.getElementById("newuser2");
+            	x.setAttribute("data-value", newuser);
+            	x.innerHTML = newuser;
+            	y.innerHTML = (newuser/totaluser*100).toFixed(2);
+            } ,
+            error: function(){
+                
+            }         
+       });
+    	//今日新购买订单
+    	$.ajax({
+            type:"POST",
+            url:"../stockt/searchAllbill.action",
+            data:{},
+            datatype: "json",
+            success:function(data){
+            	
+            	var newbill = 0;
+            	var totalbill = 0;
+            	for(var o in data)
+            	{
+            		var date = data[o].date;
+            		var nowday = getNowFormatDate();
+            		if(date.substring(0,10)==nowday.substring(0,10))
+            		{
+            			newbill=newbill+1;
+            			
+            		}
+            		totalbill=totalbill+1;
+            	}
+            	//console.log(newbill);
+            	//console.log(totalbill);
+            	var x = document.getElementById("newbill1");
+            	var y = document.getElementById("newbill2");
+            	x.setAttribute("data-value", newbill);
+            	y.setAttribute("data-value", (newbill/totalbill*100).toFixed(2));
+            	x.innerHTML = newbill;
+            	y.innerHTML = (newbill/totalbill*100).toFixed(2);
+            } ,
+            error: function(){
+                
+            }         
+       });
+    	//今日新出售订单
+    	$.ajax({
+            type:"POST",
+            url:"../stockt/searchHisstock.action",
+            data:{},
+            datatype: "json",
+            success:function(data){
+            	//console.log(data);
+            	var newbill = 0;
+            	var totalbill = 0;
+            	for(var o in data)
+            	{
+            		var date = data[o].sdate;
+            		var nowday = getNowFormatDate();
+            		if(date.substring(0,10)==nowday.substring(0,10))
+            		{
+            			newbill=newbill+1;
+            			
+            		}
+            		totalbill=totalbill+1;
+            	}
+            	//console.log(newbill);
+            	///console.log(totalbill);
+            	var x = document.getElementById("newhisbill1");
+            	var y = document.getElementById("newhisbill2");
+            	x.setAttribute("data-value", newbill);
+            	y.setAttribute("data-value", (newbill/totalbill*100).toFixed(2));
+            	x.innerHTML = newbill;
+            	y.innerHTML = (newbill/totalbill*100).toFixed(2);
+            } ,
+            error: function(){
+                
+            }         
+       });
       // Initialize card flip
       $('.card.hover').hover(function(){
         $(this).addClass('flip');
       },function(){
         $(this).removeClass('flip');
       });
-
-      // Initialize flot chart
-      var d1 =[ [1, 715],
-            [2, 985],
-            [3, 1525],
-            [4, 1254],
-            [5, 1861],
-            [6, 2621],
-            [7, 1987],
-            [8, 2136],
-            [9, 2364],
-            [10, 2851],
-            [11, 1546],
-            [12, 2541]
-      ];
-      var d2 =[ [1, 463],
-                [2, 578],
-                [3, 327],
-                [4, 984],
-                [5, 1268],
-                [6, 1684],
-                [7, 1425],
-                [8, 1233],
-                [9, 1354],
-                [10, 1200],
-                [11, 1260],
-                [12, 1320]
-      ];
-      var months = ["January", "February", "March", "April", "May", "Juny", "July", "August", "September", "October", "November", "December"];
+      
+      // 用户访问数与交易量
+      function getd2()
+      {
+    	  var d2 =[ [1, 13],
+                    [2, 58],
+                    [3, 17],
+                    [4, 24],
+                    [5, 48],
+                    [6, 14],
+                    [7, 55],
+                    
+          ];
+    	  return d2;
+      }
+      //console.log(getd2());
+      function getd1()
+      {
+    	  var d1=0;
+    	  $.ajax({
+              type:"POST",
+              url:"../stockt/searchWeekstock.action",
+              data:{},
+              async: false,  
+              datatype: "json",
+              success:function(data){
+            	  console.log(data);
+                  d1 =[ [1, 15],
+            	        [2, 85],
+            	        [3, 25],
+            	        [4, 54],
+            	        [5, 61],
+            	        [6, 21],
+            	        ];
+                  d1.push([7, 87]);
+              } ,
+              error: function(){
+                  
+              }         
+         });
+    	 return d1;
+      }
+      console.log(getd1());
+      var months = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
 
       // flot chart generate
       var plot = $.plotAnimator($("#statistics-chart"), 
         [
           {
-            label: 'Sales', 
-            data: d1,    
+            label: '访问量', 
+            data: getd1(),    
             lines: {lineWidth:3}, 
             shadowSize:0,
             color: '#ffffff'
           },
-          { label: "Visits",
-            data: d2, 
+          { label: "成交量",
+            data: getd2(), 
             animator: {steps: 99, duration: 500, start:200, direction: "right"},   
             lines: {        
               fill: .15,
@@ -999,14 +935,14 @@
             },
             color:['#ffffff']
           },{
-            label: 'Sales',
-            data: d1, 
+            label: '访问量',
+            data: getd1(), 
             points: { show: true, fill: true, radius:6,fillColor:"rgba(0,0,0,.5)",lineWidth:2 }, 
             color: '#fff',        
             shadowSize:0
           },
-          { label: "Visits",
-            data: d2, 
+          { label: "成交量",
+            data: getd2(), 
             points: { show: true, fill: true, radius:6,fillColor:"rgba(255,255,255,.2)",lineWidth:2 }, 
             color: '#fff',        
             shadowSize:0
@@ -1018,7 +954,7 @@
           tickLength: 0,
           tickDecimals: 0,
           min:1,
-          ticks: [[1,"JAN"], [2, "FEB"], [3, "MAR"], [4, "APR"], [5, "MAY"], [6, "JUN"], [7, "JUL"], [8, "AUG"], [9, "SEP"], [10, "OCT"], [11, "NOV"], [12, "DEC"]],
+          ticks: [[1,"Mon"], [2, "Thes"], [3, "Wed"], [4, "Thur"], [5, "Fri"], [6, "Sat"], [7, "Sun"]],
 
           font :{
             lineHeight: 24,
@@ -1059,34 +995,7 @@
         legend: { show: false}
       });
 
-      $(window).resize(function() {
-        // redraw the graph in the correctly sized div
-        plot.resize();
-        plot.setupGrid();
-        plot.draw();
-      });
-
-      $('#mmenu').on(
-        "opened.mm",
-        function()
-        {
-          // redraw the graph in the correctly sized div
-          plot.resize();
-          plot.setupGrid();
-          plot.draw();
-        }
-      );
-
-      $('#mmenu').on(
-        "closed.mm",
-        function()
-        {
-          // redraw the graph in the correctly sized div
-          plot.resize();
-          plot.setupGrid();
-          plot.draw();
-        }
-      );
+      
 
       // tooltips showing
       $("#statistics-chart").bind("plothover", function (event, pos, item) {
@@ -1153,20 +1062,48 @@
         graph.update();
 
       },1000);
-
+      
       // Morris donut chart
-      Morris.Donut({
-        element: 'browser-usage',
-        data: [
-          {label: "Chrome", value: 25},
-          {label: "Safari", value: 20},
-          {label: "Firefox", value: 15},
-          {label: "Opera", value: 5},
-          {label: "Internet Explorer", value: 10},
-          {label: "Other", value: 25}
-        ],
-        colors: ['#00a3d8', '#2fbbe8', '#72cae7', '#d9544f', '#ffc100', '#1693A5']
-      });
+      $.ajax({
+            type:"POST",
+            url:"../usert/successUser.action",
+            data:{},
+            datatype: "json",
+            success:function(data){
+            	var pro = 0;
+            	var lo = 0;
+            	for(var o in data){  
+                    pro += data[o].total * (data[o].roit/100);
+                    lo += data[o].total * (1-data[o].roit/100);
+                   
+                }
+            	var profit = Math.round(pro)/(Math.round(lo)+Math.round(pro));
+            	var loss = 1-profit;
+            	profit = (profit*100).toFixed(2);
+            	loss = (loss*100).toFixed(2);
+            	Morris.Donut({
+                    element: 'browser-usage',
+                    data: [
+                      
+                      {label: "亏", value: Math.round(lo)},
+                      {label: "盈", value: Math.round(pro)},
+                     
+                    ],
+                    colors: [ '#76EE00','#ff0000']
+                  });
+            	var x = document.getElementById("profit"); 
+            	var y = document.getElementById("loss");
+            	x.innerHTML = profit.toString()+"%";
+            	y.innerHTML = loss.toString()+"%";
+            	//console.log(x.innerHTML); 
+            	//console.log(y.html); 
+            } ,
+            error: function(){
+                
+            }         
+       });
+      
+      
 
       $('#browser-usage').find("path[stroke='#ffffff']").attr('stroke', 'rgba(0,0,0,0)');
 

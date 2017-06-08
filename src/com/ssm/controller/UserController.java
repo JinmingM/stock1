@@ -141,6 +141,7 @@ public class UserController {
 			map.put("id", user.getUid());
 			map.put("name",user.getUname());
 			map.put("pwd", user.getUpwd());
+			map.put("date", user.getUdate());
 			//超链a 是json数据被异步显示到页面中，添加title属性值是该条记录的users主键，每一条记录的title值是不同的
 			map.put("edit", "<a href='javascript:void(0);' class='btn btn-info  btn-sm' title='"
 			        +user.getUid()+"' id='editUserBt'>Edit</a>");

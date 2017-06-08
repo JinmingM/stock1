@@ -18,6 +18,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import com.ssm.dao.IBillsMapper;
 import com.ssm.dao.IStocksMapper;
 import com.ssm.dao.IUsersMapper;
+import com.ssm.entity.Bcount;
+import com.ssm.entity.Bhistory;
+import com.ssm.entity.Bills;
 import com.ssm.entity.HisStock;
 import com.ssm.entity.Stock;
 import com.ssm.entity.User;
@@ -68,6 +71,31 @@ public class StockController {
 		}
 		return res;
 	}
+	//查找全部股票订单
+		@RequestMapping("/searchAllbill")
+		@ResponseBody
+		public List<Map<String, Object>> FindAllBills(HttpServletRequest request,
+				HttpServletResponse response) throws UnsupportedEncodingException{
+			request.setCharacterEncoding("UTF-8");
+			response.setCharacterEncoding("UTF-8");
+			response.setContentType("application/json");
+			List<Map<String, Object>> res=new ArrayList<Map<String,Object>>();
+			System.out.println("search stock history");
+			List<Bills> listStock=this.billsMapper.SelectBillAll();
+			Map<String, Object> map=null;
+			
+			//System.out.println("search all stock");
+			
+			for (Bills stock : listStock) {
+				map=new HashMap<String, Object>();
+				map.put("uid", stock.getUid());
+				map.put("sid", stock.getSid());
+				map.put("cost", stock.getCost());
+				map.put("date", stock.getDate());
+				res.add(map);
+			}
+			return res;
+		}
 	//查找股票历史交易记录
 	@RequestMapping("/searchHisstock")
 	@ResponseBody
@@ -95,4 +123,26 @@ public class StockController {
 		}
 		return res;
 	}
+	//查找本周股票交易数
+		@RequestMapping("/searchWeekstock")
+		@ResponseBody
+		public List<Map<String, Object>> FindWeekBills(HttpServletRequest request,
+				HttpServletResponse response) throws UnsupportedEncodingException{
+			request.setCharacterEncoding("UTF-8");
+			response.setCharacterEncoding("UTF-8");
+			response.setContentType("application/json");
+			List<Map<String, Object>> res=new ArrayList<Map<String,Object>>();
+			System.out.println("search stock history");
+			List<HisStock> listStock=this.billsMapper.SelectHisStock();
+			List<Bills> listStock1=this.billsMapper.SelectBillAll();
+			Map<String, Object> map=null;
+			
+			//System.out.println("search all stock");
+			
+			for (HisStock stock : listStock) {
+				map=new HashMap<String, Object>();
+				
+			}
+			return res;
+		}
 }
