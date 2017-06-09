@@ -7,13 +7,19 @@
    
     <resultMap id="StockResults" type="com.ssm.entity.Stock">
 	    <id column="sid" property="sid" jdbcType="INTEGER" javaType="Integer" />        
-	    <result column="sname" property="sname" jdbcType="VARCHAR" javaType="string" />  
-	     <result column="date" property="date"/>          
+	    <result column="sname" property="sname" jdbcType="VARCHAR" javaType="string" />            
     </resultMap>      
    
     <select id="SelectStockAll" resultMap="StockResults">
-      SELECT * from stock order by sid asc;
+      SELECT * from stock order by sid desc;
     </select>
+	<select id="SelectStockBySid" resultMap="StockResults">
+      SELECT * FROM stock WHERE sid=#{sid};
+    </select> 
+    <insert id="BuyStocks" parameterType="com.ssm.entity.Bill">
+      INSERT INTO bill(uid,sid,balance,abalance,cost,date) 
+      VALUES (#{uid},#{sid},#{balance},#{balance},#{cost},NOW());	
+    </insert> 
    
 <!--     <select id="SelectUserAll" resultMap="UserResults"> -->
 <!--     	SELECT * from users order by udate desc; -->

@@ -1,9 +1,10 @@
 package com.ssm.entity;
 
-public class Bills {
+public class Bill {
 	private int uid,sid,balance,abalance;
-	public double cost;
+	private double cost;
 	private String date,context;
+	private Stock stock;
 
 	public int getBalance() {
 		return balance;
@@ -59,6 +60,20 @@ public class Bills {
 
 	public void setUid(int uid) {
 		this.uid = uid;
+	}
+
+	/**
+	 * @return the stock
+	 */
+	public Stock getStock() {
+		return stock;
+	}
+
+	/**
+	 * @param stock the stock to set
+	 */
+	public void setStock(Stock stock) {
+		this.stock = stock;
 	}
 
 }
