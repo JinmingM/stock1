@@ -1,5 +1,6 @@
 package com.ssm.controller;
 
+import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -10,6 +11,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
@@ -138,6 +140,22 @@ public class StockController {
 		}
 
 		return map;
+	}
+	@RequestMapping("/kinfo1")
+	@ResponseBody 
+	public String[] Sinfo(HttpServletRequest request, HttpServletResponse response,@RequestParam("sid")String sid,
+			@RequestParam("stype")String stype) throws ServletException, IOException {
+		
+		request.setCharacterEncoding("utf-8");//html页面请求的编码格式，国际标准中文编码格式
+		response.setCharacterEncoding("utf-8");//往往异步机制返回的页面编码格式，中国标准的中文编码格式
+	
+		Test my=new Test();
+		
+		String sr=my.sendPost("http://hq.sinajs.cn/list="+stype+sid, "");
+		String[] astr1 = sr.split("\"");
+		String[] astr2 = astr1[1].split(",");
+        System.out.println(astr2[1]);
+        return astr2;
 	}
 	//查找全部股票订单
 			@RequestMapping("/searchAllbill")
@@ -409,30 +427,6 @@ public class StockController {
 		     }
 		     return false;
 		    }
-
-	
-	
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 }

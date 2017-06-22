@@ -125,7 +125,7 @@ public class UserController {
 			map.put("edit", "<a href='javascript:void(0);' class='btn btn-info  btn-sm' title='"
 			        +user.getUid()+"' id='editUserBt'>Edit</a>");
 			map.put("del", "<a href='javascript:void(0);' class='btn btn-danger btn-sm'  title='"+user.getUid()+"' id='deleteUserBtn'>Delete</a>");
-			
+			map.put("date", user.getUdate());
 			res.add(map);
 		}
 		
